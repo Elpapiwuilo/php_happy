@@ -1,9 +1,9 @@
 $(document).ready(function(){
     let edit=false;
 
-    console.log('Jquery esta funcionando'); 
+    console.log('Jquery esta funcionand'); 
     // $('#task-result').hide();
-    fetchTasks();
+    // fetchTasks();
    
     // $('#search').keyup(function(e){
     //     var search=$('#search').val();
@@ -36,7 +36,7 @@ $(document).ready(function(){
      
         let url=edit===false ? 'add.php':'addUser.php';
         $.post(url,postData, function (response){
-            fetchTasks();
+            // fetchTasks();
             $('#task-form').trigger('reset');
         });         
         e.preventDefault();
@@ -44,17 +44,18 @@ $(document).ready(function(){
     });
 
 
-   function fetchTasks(){
+//    function fetchTasks(){
       
-    $.ajax({
-        url: 'task-list.php',
-        type:'GET',
-        success: function(response){
+//     $.ajax({
+//         url: 'listUser.php',
+//         type:'GET',
+//         success: function(response){
+//             console.log("lista acudientes");
     
-           $('#tasks').html(response);
-        }
-    });
-   }
+//            $('#Acudiente').html(response);
+//         }
+//     });
+//    }
 
 
 
@@ -78,7 +79,7 @@ $(document).ready(function(){
              ${task.name}
              </li>`;
          });*/  
-         fetchTasks();     
+        //  fetchTasks();     
          
         }
      });

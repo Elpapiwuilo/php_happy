@@ -6,6 +6,11 @@ $connection= mysqli_connect(
         'happy'
         );
 
-   
+ 
+if($connection){
+        print"Conexion establecida";
+}else{
+        print"error";
+}
     
 ?>

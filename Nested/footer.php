@@ -28,6 +28,7 @@
         <script src="js/app.js"></script>
         <script src="js/appuser.js"></script>
         <script src="js/login.js"></script>
+        <script src="js/acud.js"></script>
         <script>
             AOS.init();
            
